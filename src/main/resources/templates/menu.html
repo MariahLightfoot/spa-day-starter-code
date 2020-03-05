@@ -17,6 +17,9 @@
 </div>
 
 <div id = "servicesMenu">
+    <h3>Menu of Available Services</h3>
+    <h4>Facial Treatments</h4>
+    <p>The facial treatments below are recommended by our estheticians for your given skin type.</p>
     <table>
         <th:block>
             <tr th:each="facial : ${appropriateFacials}">
@@ -24,6 +27,14 @@
             </tr>
         </th:block>
     </table>
+
+    <div id="descriptions">
+        <h3>Manicure</h3>
+        <p th:replace="fragments :: manicureDescription"></p>
+
+        <h3>Pedicure</h3>
+        <p th:replace="fragments :: pedicureDescription"></p>
+    </div>
 
 </div>
 
