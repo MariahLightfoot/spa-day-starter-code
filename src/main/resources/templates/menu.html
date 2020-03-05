@@ -28,10 +28,12 @@
         </th:block>
     </table>
 
-    <div id="descriptions">
+    <div id="manicure" th:if="${manipedi.equals('manicure')}">
         <h3>Manicure</h3>
         <p th:replace="fragments :: manicureDescription"></p>
+    </div>
 
+    <div id="pedicure" th:if="${manipedi.equals('pedicure')}">
         <h3>Pedicure</h3>
         <p th:replace="fragments :: pedicureDescription"></p>
     </div>
