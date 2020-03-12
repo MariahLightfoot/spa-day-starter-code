@@ -6,23 +6,24 @@
 </head>
 <body>
 
-    <form method="POST">
-        <label> Username:
-            <input type="text">
-        </label><br>
+    <form action="/user/add" method="POST">
+        <label>Name
+            <input type="text" name="username" class="form-control">
+        </label>
 
-        <label> Email:
-            <input type="email">
-        </label><br>
+        <label>Email
+            <input type="email" name="email" class="form-control">
+        </label>
 
-        <label> Password:
-            <input type="password">
-        </label><br>
+        <label>Password
+            <input type="password" name="password" class="form-control">
+        </label>
 
-        <label> Verify Password:
-            <input type="password">
-        </label><br>
+        <label>Verify Password
+            <input type="password" name="verify" class="form-control">
+        </label>
 
+        <input type="submit" value="Submit" />
     </form>
 
 </body>
