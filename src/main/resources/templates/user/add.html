@@ -6,6 +6,10 @@
 </head>
 <body>
 
+<th:block th:if="${password != verify}">
+    <h1 th:text="${error}">Your passwords don't match!</h1>
+</th:block>
+
     <form action="/user/add" method="POST">
         <label>Name
             <input type="text" name="username" class="form-control">
