@@ -12,11 +12,11 @@
 
     <form action="/user/add" method="POST">
         <label>Name
-            <input type="text" name="username" class="form-control">
+            <input type="text" name="username" th:value="${username}" class="form-control">
         </label>
 
         <label>Email
-            <input type="email" name="email" class="form-control">
+            <input type="email" name="email" th:value="${email}" class="form-control">
         </label>
 
         <label>Password

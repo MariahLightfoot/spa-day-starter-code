@@ -23,11 +23,15 @@ public class UserController {
 
         String theGreeting = "Hello, " + user.getUsername() + "!";
         String error = "Your passwords don't match!";
+        String username = user.getUsername();
+        String email = user.getEmail();
 
         model.addAttribute("user", user);
         model.addAttribute("verify", verify);
         model.addAttribute("greeting", theGreeting);
         model.addAttribute("error", error);
+        model.addAttribute("username", username);
+        model.addAttribute("email", email);
 
         if(!verify.equals(user.getPassword())){
             return "user/add";
